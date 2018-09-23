@@ -3,18 +3,18 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorAccent">
-    
+
     <SurfaceView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/surfaceView"/>
 
     <Button
-        android:gravity="bottom"
-        android:layout_width="wrap_content"
+        android:id="@+id/capture"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="capture"
-        android:id="@+id/capture"/>
+        android:gravity="bottom"
+        android:text="capture" />
 
 
 </FrameLayout>

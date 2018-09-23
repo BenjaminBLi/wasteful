@@ -18,6 +18,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
+import android.graphics.PixelFormat;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileOutputStream;
@@ -136,16 +137,16 @@ public class CameraFragment extends Fragment implements SurfaceHolder.Callback{
         }catch(IOException e){
             e.printStackTrace();
         }
-
-        camera.startPreview();
     }
 
     @Override
     public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
+        camera.startPreview();
     }
 
     @Override
     public void surfaceDestroyed(SurfaceHolder holder) {
+        camera.release();
     }
 
     @Override
