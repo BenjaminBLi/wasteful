@@ -1,15 +1,23 @@
 package me.yruili.yorku.wasteful
 
+import android.hardware.Camera
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 
 class CameraFragment : Fragment() {
 
+    internal var camera:Camera
+    internal var mSurfaceView:SurfaceView
+    internal var mSurfaceHolder:SurfaceHolder
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_camera, container, false)
+        var view = inflater.inflate(R.layout.fragment_camera, container, false)
+
+        mSurfaceHolder = mSurfaceView.getHolder();
+
+
+        return view;
     }
 
     companion object {
@@ -17,4 +25,5 @@ class CameraFragment : Fragment() {
             return CameraFragment()
         }
     }
+
 }

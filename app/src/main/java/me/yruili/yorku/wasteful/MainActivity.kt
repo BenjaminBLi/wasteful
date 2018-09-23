@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+
+
     class MyPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
         override fun getItem(position: Int): Fragment {
