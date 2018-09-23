@@ -7,17 +7,14 @@
     <SurfaceView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/surface"/>
+        android:id="@+id/surfaceView"/>
 
-    <button
+    <Button
         android:gravity="bottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="capture"
         android:id="@+id/capture"/>
-
-
-
 
 
 </FrameLayout>
